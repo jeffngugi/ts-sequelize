@@ -1,14 +1,14 @@
 export const ProjectAssignments = [
     {
         ProjectId:1,
-        UserId:'ce0c5785-c6dd-4615-b1a3-e0bd19b252cc'
+        UserId:'f61f3e94-9b6f-4734-85c9-489bb32545f9'
     },
     {
         ProjectId:2,
-        UserId:'ce0c5785-c6dd-4615-b1a3-e0bd19b252cc'
+        UserId:'5b96c146-0dcc-42fa-8544-e1b17ee3a49a'
     },
     {
         ProjectId:3,
-        UserId:'738f3884-d859-49ef-bb6a-12db01d6e0f8'
+        UserId:'f61f3e94-9b6f-4734-85c9-489bb32545f9'
     }
 ]

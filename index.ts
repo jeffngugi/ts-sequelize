@@ -1,7 +1,7 @@
 import express, {Request, Response} from 'express'
 const app = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8008
 
 import db from './models'
 import { ProjectAssignments } from './seeders/projectAssignment'
@@ -30,7 +30,12 @@ const createProjectAssignment = ()=>{
 // createProject()
 // createProjectAssignment()
 app.get('/', (req:Request, res:Response)=>{
-    return 'jeff ngugi'
+    db.User.findAll({
+        include:{
+            model:db.Project
+        }
+    }).then((result:object)=>res.json(result))
+    .catch((err:object)=>console.log(err))
 })
  
 db.sequelize.sync().then(()=>{
